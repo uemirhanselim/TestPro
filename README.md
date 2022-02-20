@@ -4,7 +4,8 @@ A flutter demo fitness app project with Firebase Realtime Database and Authentic
 
 ## Screenshots
 
-![Screenshot_1645366085](https://user-images.githubusercontent.com/91256437/154848829-34e62490-080e-4905-9961-00727741a20d.png =250x250)
+
+<img src="https://user-images.githubusercontent.com/..." data-canonical-src="https://user-images.githubusercontent.com/91256437/154848829-34e62490-080e-4905-9961-00727741a20d.png" width="200" height="400" />
 ![Screenshot_1645366104](https://user-images.githubusercontent.com/91256437/154848835-587ab09f-13f7-41c0-b2ad-579b7c10cffa.png =250x250)
 ![Screenshot_1645366109](https://user-images.githubusercontent.com/91256437/154848838-63bdb637-5059-4b80-8003-f1e5a3bb2ab3.png | width=100)
 ![Screenshot_1645366115](https://user-images.githubusercontent.com/91256437/154848844-070cc469-ccb5-4a08-974a-ae548ac3219a.png | width=100)
