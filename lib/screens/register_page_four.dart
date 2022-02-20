@@ -27,7 +27,6 @@ class _RegisterPageFourState extends State<RegisterPageFour> {
   @override
   Widget build(BuildContext context) {
     SharedPreferencesServices prefs = SharedPreferencesServices();
-    FirebaseService firebaseService = FirebaseService(uid: '');
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
@@ -87,7 +86,7 @@ class _RegisterPageFourState extends State<RegisterPageFour> {
                           showCustomDialog(context, "Missing Part", "Enter your sex!");
                         }else{
                           final firebaseService = FirebaseService(uid: user.uid);
-                          firebaseService.updateUser(userName: '', sex: gender!, age: age!, length: '$length $lengthUnit', weight: '$weight ');
+                          firebaseService.updateUser(userName: '', sex: gender, age: age!, length: '$length $lengthUnit', weight: '$weight ');
                           _controller.nextPage(
                               duration: Duration(milliseconds: 300),
                               curve: Curves.linear);
