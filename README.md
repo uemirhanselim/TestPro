@@ -4,7 +4,10 @@ A flutter demo fitness app project with Firebase Realtime Database and Authentic
 
 ## Screenshots
 
-https://drive.google.com/file/d/1KiC_sAUmw6JYjskeXlE8K7FLvdzSkCVG/view?usp=sharing
+
+
+![Screenshot_1645366104](https://drive.google.com/file/d/1KiC_sAUmw6JYjskeXlE8K7FLvdzSkCVG/view?usp=sharing)
+
 
 
 
