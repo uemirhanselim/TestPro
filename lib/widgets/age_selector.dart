@@ -43,7 +43,7 @@ class _AgeSelectorState extends State<AgeSelector> {
             children: List<Widget>.generate(
                 80,
                 (index) => Center(
-                      child: Text('${index + 1}'),
+                      child: Text('${index}'),
                     )),
           ),
         ),

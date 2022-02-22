@@ -239,6 +239,10 @@ class _RegisterPageOneState extends State<RegisterPageOne> {
                           });
                         }catch (e){
                           showCustomDialog(context, 'Failed Sign in', 'Check your informations!');
+                        }finally{
+                          setState(() {
+                            showSpinner = false;
+                          });
                         }
                         },
                     ),

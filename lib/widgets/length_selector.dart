@@ -53,7 +53,7 @@ class _LengthSelectorState extends State<LengthSelector> {
                     });
                     prefs.storeLength(selectedLength.toString());
                   },
-                  children: List<Widget>.generate(81, (index) => Center(child: Text('${index+120}'),)),
+                  children: List<Widget>.generate(181, (index) => Center(child: Text('${index+1}'),)),
                 ),
               ),
             ),
@@ -68,10 +68,10 @@ class _LengthSelectorState extends State<LengthSelector> {
                     setState(() {
                       this.index = index;
                     });
-                    prefs.storeLengthUnit(index.toString());
                     final unit = units[index];
+                    prefs.storeLengthUnit(unit.toString());
                   },
-                  children: units.map((unit) => Center(child: Text(unit,style: TextStyle(fontSize: 20)),)).toList(),
+                  children: units.map((unit) => Center(child: Text('${unit}',style: TextStyle(fontSize: 20)),)).toList(),
                 ),
               ),
             ),

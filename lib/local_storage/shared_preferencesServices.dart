@@ -34,6 +34,11 @@ class SharedPreferencesServices {
     prefs?.setString('weightUnit', selectedWeightUnit);
   }
 
+  void storeUserName(String selectedUserName) async {
+    prefs = await SharedPreferences.getInstance();
+    prefs?.setString('userName', selectedUserName);
+  }
+
   Future<String?> fetchGender() async {
     prefs = await SharedPreferences.getInstance();
     return await prefs?.getString('gender');
@@ -53,5 +58,9 @@ class SharedPreferencesServices {
   Future<String?> fetchWeight() async {
     prefs = await SharedPreferences.getInstance();
     return await prefs?.getString('weight');
+  }
+  Future<String?> fetchUserName() async {
+    prefs = await SharedPreferences.getInstance();
+    return await prefs?.getString('userName');
   }
 }

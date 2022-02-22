@@ -45,7 +45,7 @@ class _WeightSelectorState extends State<WeightSelector> {
                     });
                     prefs.storeWeight(selectedWeight.toString());
                   },
-                  children: List<Widget>.generate(100, (index) => Center(child: Text('${index+1}'),)),
+                  children: List<Widget>.generate(100, (index) => Center(child: Text('${index}'),)),
                 ),
               ),
             ),

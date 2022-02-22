@@ -35,7 +35,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
             labelStyle: TextStyle(
               fontSize: 15.0,
               fontWeight: FontWeight.bold,
-              color: Colors.black,
+              color: Colors.grey.shade600,
             ),
             border: OutlineInputBorder().copyWith(borderRadius: BorderRadius.circular(17.0)),
           ),

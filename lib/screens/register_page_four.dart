@@ -81,12 +81,13 @@ class _RegisterPageFourState extends State<RegisterPageFour> {
                         final length = await prefs.fetchLength();
                         final lengthUnit = await prefs.fetchLengthUnit();
                         final weight = await prefs.fetchWeight();
+                        final userName = await prefs.fetchUserName();
                         User user = _auth.currentUser!;
                         if(gender!.isEmpty){
                           showCustomDialog(context, "Missing Part", "Enter your sex!");
                         }else{
                           final firebaseService = FirebaseService(uid: user.uid);
-                          firebaseService.updateUser(userName: '', sex: gender, age: age!, length: '$length $lengthUnit', weight: '$weight ');
+                          firebaseService.updateUser(userName: userName!, sex: gender, age: age!, length: '$length $lengthUnit', weight: '$weight ');
                           _controller.nextPage(
                               duration: Duration(milliseconds: 300),
                               curve: Curves.linear);

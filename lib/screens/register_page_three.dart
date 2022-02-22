@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:test_pro/local_storage/shared_preferencesServices.dart';
 import 'package:test_pro/screens/register_page_four.dart';
 import 'package:test_pro/widgets/auth_button.dart';
 import 'package:test_pro/widgets/custom_dialog.dart';
@@ -17,6 +18,7 @@ class RegisterPageThree extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    SharedPreferencesServices prefs = SharedPreferencesServices();
     return SafeArea(
       child: Scaffold(
         body: SingleChildScrollView(
@@ -66,7 +68,9 @@ class RegisterPageThree extends StatelessWidget {
                   }else{
                     User user = _auth.currentUser!;
                     final firebaseService = FirebaseService(uid: user.uid);
+                    prefs.storeUserName(userNameController.text);
                     firebaseService.updateUser(userName: userNameController.text, sex: '', age: '', length: '', weight: '',);
+                    userNameController.clear();
                     Navigator.push(
                       context,
                       MaterialPageRoute(
