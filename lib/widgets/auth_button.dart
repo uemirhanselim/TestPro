@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:test_pro/screens/register_page_one.dart';
-
-import '../screens/register_page_three.dart';
 
 class AuthButton extends StatelessWidget {
   AuthButton({Key? key, required this.button_text, required this.button_height, required this.button_width, required this.onTapNavigate}) : super(key: key);

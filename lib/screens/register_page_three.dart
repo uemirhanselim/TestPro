@@ -7,6 +7,7 @@ import 'package:test_pro/widgets/custom_dialog.dart';
 import 'package:test_pro/widgets/custom_text_field.dart';
 import 'package:test_pro/database/firebase_service.dart';
 
+// ignore: must_be_immutable
 class RegisterPageThree extends StatelessWidget {
   RegisterPageThree({Key? key, required this.currentUser}) : super(key: key);
 

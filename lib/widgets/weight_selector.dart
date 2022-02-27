@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/material.dart';
 import 'package:test_pro/local_storage/shared_preferencesServices.dart';
 
 class WeightSelector extends StatefulWidget {
@@ -61,7 +60,6 @@ class _WeightSelectorState extends State<WeightSelector> {
                       this.index = index;
                     });
                     prefs.storeWeightUnit(index.toString());
-                    final unit = units[index];
                   },
                   children: units.map((unit) => Center(child: Text(unit,style: TextStyle(fontSize: 20)),)).toList(),
                 ),
